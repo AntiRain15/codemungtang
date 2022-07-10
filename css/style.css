@@ -1,0 +1,127 @@
+/* 메인 */
+ul
+{
+    list-style: none;
+    padding-left: 0px;
+}
+
+html
+{
+    width: 100%;
+    height: 100%;
+}
+
+body
+{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+}
+
+.hidden
+{
+    display: none;
+}
+
+.blindlight
+{
+    background-color: mediumpurple;
+}
+/* 레이아웃 */
+
+.grid-container 
+{
+    display: grid;
+    grid-template-areas:  'hd hd'
+                          'sd mn1'
+                          'sd mn2';
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 50px 300px 1fr;
+    height: 100%;
+}
+  
+.header 
+{
+    grid-area: hd;
+    background-color: #666666;
+}
+  
+.side-bar
+{
+    grid-area: sd;
+    background-color: #424242;
+}
+  
+.main1
+{
+    grid-area: mn1;
+    background-color: white;
+    margin: 20px;
+    border: solid 3px silver;
+}
+
+.main2
+{
+    grid-area: mn2;
+    background-color: white;
+    margin: 20px;
+    margin-top: 0px;
+    border: solid 3px silver;
+}
+
+/* main1 */
+
+.profile-container
+{
+    display: grid;
+    grid-template-areas: 'pa pb'
+                         'pa pc';
+    grid-template-columns: 254px 1fr;
+    grid-template-rows: 100px 150px;
+}
+
+.profile-a
+{
+    grid-area: pa;
+}
+
+.profile-b
+{
+    grid-area: pb;
+    font-family: 'NanumGothic';
+    padding-top: 50px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.profile-c
+{
+    margin-top: 4px;
+    grid-area: pc;
+    font-family: 'NanumGothic';
+}
+
+.profile-img
+{
+    width: 200px;
+    height: 200px;
+    margin: 24px;
+    border-radius: 70%;
+    border: solid 3px silver;
+}
+
+/* main2 */
+
+.schedule-title
+{
+    font-family: 'NanumGothic';
+    font-size: 30px;
+    padding-right: 15px;
+    padding-left: 16px;
+}
+
+.schedule-item
+{
+    margin-bottom: 5px;
+}
